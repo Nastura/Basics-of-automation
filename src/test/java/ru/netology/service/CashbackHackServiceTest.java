@@ -4,14 +4,15 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+
 public class CashbackHackServiceTest {
 
     CashbackHackService service = new CashbackHackService();
 
     @Test
     public void remain() {
-        int actual = service.remain(1100);
-        int expected = 900;
+        int actual = service.remain(1000);
+        int expected = 0;
         Assert.assertEquals(expected, actual);
     }
 
